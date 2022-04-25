@@ -1,6 +1,7 @@
 from random import randint
 from usuario import Usuario
 
+
 class Juego:
     num = None
     usuario = None
@@ -12,6 +13,7 @@ class Juego:
     def juega(self):
         while(self.usuario.num != self.num):
             self.usuario.introduce_numero()
+            
             if self.num < self.usuario.num:
                 print('más bajo')
             elif self.num > self.usuario.num:
