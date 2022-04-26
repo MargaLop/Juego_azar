@@ -12,8 +12,8 @@ class Juego:
     
     def juega(self):
         while(self.usuario.num != self.num):
+
             self.usuario.introduce_numero()
-            
             if self.num < self.usuario.num:
                 print('más bajo')
             elif self.num > self.usuario.num:
